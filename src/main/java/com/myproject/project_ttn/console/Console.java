@@ -1,19 +1,20 @@
-package com.myproject.project_ttn.console_alt;
+package com.myproject.project_ttn.console;
 
-import com.myproject.project_ttn.logic_alt.customer_alt.CustomerTaskAlt;
-import com.myproject.project_ttn.logic_alt.driver_alt.DriverTaskAlt;
-import com.myproject.project_ttn.logic_alt.manager_alt.ManagerTaskAlt;
+import com.myproject.project_ttn.logic.customer.CustomerTask;
+import com.myproject.project_ttn.logic.driver.DriverTask;
+import com.myproject.project_ttn.logic.manager.ManagerTask;
 
 import java.util.Scanner;
 
-public class ExDemoTtnAlt {
+public class Console {
     public static void main(String[] args) {
 
-        ManagerTaskAlt managerTask = new ManagerTaskAlt();
-        DriverTaskAlt driverTask = new DriverTaskAlt();
-        CustomerTaskAlt customerTask = new CustomerTaskAlt();
+        ManagerTask managerTask = new ManagerTask();
+        DriverTask driverTask = new DriverTask();
+        CustomerTask customerTask = new CustomerTask();
 
         System.out.println("++++++++++MenuTask++++++++++");
+
         while (true) {
             Scanner scanner = new Scanner(System.in);
             try {
@@ -21,9 +22,9 @@ public class ExDemoTtnAlt {
                 System.out.println("2. Driver");
                 System.out.println("3. Customer");
                 System.out.println("4. Exit");
-                int usIn = scanner.nextInt();
+                int userIn = scanner.nextInt();
 
-                switch (usIn) {
+                switch (userIn) {
                     case 1:
                         System.out.println("Enter 1");
                         managerTask.managerTask();
@@ -43,8 +44,6 @@ public class ExDemoTtnAlt {
             } catch (Exception e) {
                 System.out.println("Error!");
             }
-//            scanner.close();
         }
-
     }
 }

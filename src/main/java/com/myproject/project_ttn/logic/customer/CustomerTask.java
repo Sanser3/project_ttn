@@ -1,6 +1,6 @@
-package com.myproject.project_ttn.logic_alt.customer_alt;
+package com.myproject.project_ttn.logic.customer;
 
-public class CustomerTaskAlt {
+public class CustomerTask {
     public void customerTask(){
         System.out.println("++++++++++CustomerTask++++++++++");
     }
