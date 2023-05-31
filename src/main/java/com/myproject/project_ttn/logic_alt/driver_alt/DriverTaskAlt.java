@@ -1,6 +1,6 @@
-package com.myproject.project_ttn.logic.driver;
+package com.myproject.project_ttn.logic_alt.driver_alt;
 
-public class DriverTask {
+public class DriverTaskAlt {
     public void driverTask(){
         System.out.println("++++++++++DriverTask++++++++++");
     }

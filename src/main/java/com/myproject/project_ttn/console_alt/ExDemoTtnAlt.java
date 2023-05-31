@@ -1,17 +1,17 @@
-package com.myproject.project_ttn.console;
+package com.myproject.project_ttn.console_alt;
 
-import com.myproject.project_ttn.logic.customer.CustomerTask;
-import com.myproject.project_ttn.logic.driver.DriverTask;
-import com.myproject.project_ttn.logic.manager.ManagerTask;
+import com.myproject.project_ttn.logic_alt.customer_alt.CustomerTaskAlt;
+import com.myproject.project_ttn.logic_alt.driver_alt.DriverTaskAlt;
+import com.myproject.project_ttn.logic_alt.manager_alt.ManagerTaskAlt;
 
 import java.util.Scanner;
 
-public class ExDemoTtn {
+public class ExDemoTtnAlt {
     public static void main(String[] args) {
 
-        ManagerTask managerTask = new ManagerTask();
-        DriverTask driverTask = new DriverTask();
-        CustomerTask customerTask = new CustomerTask();
+        ManagerTaskAlt managerTask = new ManagerTaskAlt();
+        DriverTaskAlt driverTask = new DriverTaskAlt();
+        CustomerTaskAlt customerTask = new CustomerTaskAlt();
 
         System.out.println("++++++++++MenuTask++++++++++");
         while (true) {
